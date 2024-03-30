@@ -51,8 +51,8 @@ defineProps<{ type: ButtonType }>();
 
 <style lang="scss" scoped>
 svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -61,7 +61,6 @@ svg {
 .btn-container {
     width: 145px;
     height: 47px;
-    color: hsl(330, calc(15% - 5%), calc(57% + 12%));
     user-select: none;
     border-radius: 10px;
     position: relative;
@@ -94,15 +93,18 @@ svg {
 
         &.default {
             justify-content: center;
+            color: #A8B8B3;
         }
 
         &.common {
             left: 40px;
             padding-left: 12px;
+            color: #A8B8B3;
         }
 
         &.no {
             background: #68555E;
+            color: #B8A8B0;
         }
 
     }
@@ -110,6 +112,11 @@ svg {
     &:hover {
         filter: brightness(120%);
         transform: translateY(-1px);
+    }
+
+    &:active {
+        filter: brightness(90%);
+        transform: translateY(2px);
     }
 
 

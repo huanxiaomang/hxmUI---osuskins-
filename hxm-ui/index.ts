@@ -5,7 +5,7 @@ import HxmDialog from './components/dialog/index.vue';
 const components = {
     HxmButton,
     HxmPicClip,
-    HxmDialog
+    HxmDialog,
 }
 
 

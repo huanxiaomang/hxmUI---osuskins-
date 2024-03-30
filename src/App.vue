@@ -25,7 +25,7 @@
             <hxm-dialog class="dialog" v-show="dgVisible">
                 <hxm-pic-clip class="pic" mode="shadow" background="#95927E" :url="NSFW_img"
                     href="https://www.pixiv.net/en/artworks/84697729"></hxm-pic-clip>
-                <div class="text">警告，NSFW 内容!</div>
+                <div class="text">警告，NSFW 内容！</div>
                 <div class="des">此皮肤包含可能会使人不安的敏感或成人内容</div>
                 <template #footer>
                     <div class="f-btns">
@@ -52,6 +52,13 @@
                 </template>
             </hxm-dialog>
 
+
+
+        </div>
+        <div class="title">Message</div>
+        <div class="list">
+            <hxm-button type="default" @click="setAvatar">设置头像</hxm-button>
+
         </div>
 
     </div>
@@ -62,6 +69,7 @@ import { ref } from 'vue';
 import NSFW_img from './assets/images/nsfw.png'
 import PREPARE_img from './assets/images/prepare.png'
 import PICA_img from './assets/images/pica.png'
+import showMsg from './../hxm-ui/components/message/index'
 
 const dgVisible = ref(false);
 const dgVisible2 = ref(false);
@@ -69,8 +77,12 @@ const dgVisible2 = ref(false);
 const changeDgVisible = () => dgVisible.value = !dgVisible.value;
 const changeDgVisible2 = () => dgVisible2.value = !dgVisible2.value;
 
+const setAvatar = () => {
+    showMsg('设置成功了哦！');
+}
+
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .container {
     padding: 40px;
     background: #59564A;
@@ -83,6 +95,7 @@ const changeDgVisible2 = () => dgVisible2.value = !dgVisible2.value;
         font-size: 40px;
         font-weight: bold;
     }
+
 
     .list {
         display: flex;
