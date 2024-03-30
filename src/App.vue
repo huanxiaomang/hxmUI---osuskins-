@@ -15,6 +15,8 @@
                 href="https://www.pixiv.net/en/artworks/84697729"></hxm-pic-clip>
             <hxm-pic-clip class="pic2" mode="common" background="#1E2029" :url="PREPARE_img"
                 href="https://www.pixiv.net/en/artworks/84697729"></hxm-pic-clip>
+            <hxm-pic-clip class="pic2" mode="common" background="#1E2029" :url="GURA_img"
+                href="https://www.pixiv.net/en/artworks/84697729"></hxm-pic-clip>
         </div>
 
 
@@ -39,7 +41,7 @@
 
             <hxm-button type="default" @click="changeDgVisible2">确认窗口</hxm-button>
             <hxm-dialog class="dialog" v-show="dgVisible2">
-                <hxm-pic-clip class="pic" mode="shadow" background="#95927E" :url="PICA_img"
+                <hxm-pic-clip class="pic" mode="shadow" background="#95927E" :url="GURA_img"
                     href="https://www.pixiv.net/en/artworks/84697729"></hxm-pic-clip>
                 <div class="text">等等，前面是R18内容!</div>
                 <div class="des">看了很可能会变成满脑子只有涩涩的笨蛋</div>
@@ -69,6 +71,7 @@ import { ref } from 'vue';
 import NSFW_img from './assets/images/nsfw.png'
 import PREPARE_img from './assets/images/prepare.png'
 import PICA_img from './assets/images/pica.png'
+import GURA_img from './assets/images/gura.png'
 import showMsg from './../hxm-ui/components/message/index'
 
 const dgVisible = ref(false);

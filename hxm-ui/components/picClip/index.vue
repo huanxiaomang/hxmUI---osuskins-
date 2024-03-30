@@ -81,6 +81,7 @@ defineProps<{ url: string, href: string, mode: 'common' | 'shadow', background: 
             transform: scale(0);
             pointer-events: none;
             filter: brightness(1.2);
+
         }
 
 
